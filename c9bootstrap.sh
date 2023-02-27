@@ -47,9 +47,7 @@ function install_utility_tools() {
 function install_nvm_tools() {
     _logger "[+] Installing nvm"
     sudo -- sh -c 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
-    sudo -- sh -c '. ~/.nvm/nvm.sh'
-    sudo -- sh -c 'nvm install ''lts/gallium'''
-    sudo -- sh -c 'nvm alias default ''lts/gallium'''
+    sudo -- sh -c '. ~/.nvm/nvm.sh && nvm install --lts'    
 
 }
 
