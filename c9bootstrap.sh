@@ -92,11 +92,11 @@ function cleanup(){
 function main() {
     update_system
     update_python_packages
-    install_utility_tools
-    install_nvm_tools
+    install_utility_tools   
     configure_aws_cli
     configure_bash_profile
     disable_c9_temp_creds
+    install_nvm_tools
     cleanup
 
     echo -e "${RED} [!!!!!!!!!] To be safe, I suggest closing this terminal and opening a new one! ${NC}"
